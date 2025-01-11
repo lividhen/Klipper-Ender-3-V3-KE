@@ -7,7 +7,7 @@ Configs and stuff for running klipper on the Ender 3 V3 KE without the nebula pa
 These are hopefully mostly drag and drop. If you are using a different setup to me (which is not unlikely) you will have to look through and change anything that's needed. They are imperfect as creality seems to do a lot of things that... don't make a lot of sense. If you find any issues please open an issue to let me know!
 
 ## My setup
-I am using a pi 4 running mainsail is and kalico connected to the printer via Creality's serial to USB adapter ((Amazon)[]).
+I am using a pi 4 running mainsail is and kalico connected to the printer via Creality's serial to USB adapter ([Amazon](https://www.amazon.com/Creality-Sonic-Pad-Serial-Cable/dp/B0CFL5N319/ref=mp_s_a_1_1?crid=3KJQP9FARDMYA&dib=eyJ2IjoiMSJ9.pFnhUqBv4cuKFHbP5ICexNFIZgzGYcOXJHPROlFUslvK0fuS_mQXrdUSgCafDtjyxDuIaSFle6TBUwuxQqfihCQkfag_JSO_g23-OSvtQPOwpDblb_gt12PiqYPptFTUj94aAzxj58K2hR7oAsdKEZNfQRx2JJRr_ajKhjsJ-USxHYISjq5nwwu0n2Uerh7meeaJQkipmTiVT5Po0gLCLw.SCEXMVqklgPEOE0RnG69vfyV5OTgjC2vz_GVTm3R42Q&dib_tag=se&keywords=creality+serial+adapter&qid=1736591800&sprefix=creality+serial+adapter%2Caps%2C158&sr=8-1])).
 
 ---
 
@@ -15,7 +15,7 @@ I am using a pi 4 running mainsail is and kalico connected to the printer via Cr
 Please read ALL of this before even opening a terminal. If you find any issues please open an issue to let me know!
 
 ## Building klipper
-To build klipper for the MCU on the printer's mainboard you can use the following and the instructions in the (klipper repo)[]:
+To build klipper for the MCU on the printer's mainboard you can use the following and the instructions in the [klipper repo](https://github.com/Klipper3d/klipper):
 
 ```
 [*] Enable extra low-level configuration options
@@ -33,7 +33,7 @@ To build klipper for the MCU on the printer's mainboard you can use the followin
 Disabling SWD at startup seems to be optional. If using the 5 pin serial port on the board, instead use USART1 PA10/PA9 as the communication interface.
 
 ## Building katapult
-Github can be found (here)[].
+The katapukt github can be found [here](https://github.com/Arksine/katapult).
 I couldn't get the stock bootloader to load klipper no matter how hard I tried. Maybe its my specific board. Not sure. If you want to try, build klipper with a bootloader offset of 28kb and flash to offset 0x08007000 of the MCU using the SWD debug probe detailed later.  
 
 Use the same settings as above but I recommend leaving disable SWD on startup OFF to make troubleshooting easier.
@@ -44,7 +44,7 @@ OK... this part is fun. Not user friendly. You will need a pi pico, pi debug pro
 
 I will give instructions on using a pi pico as a debug probe and a pi 4.
 
-Install the pi (debugger firmware)[] to your pi pico. Solder wires to or plug wires into the pin headers of GND, GP2 and GP3 on your pi pico. Open up the bottom of your printer and on the control board look to the right of the header of the long rainbow ribbon cable used for serial connections you will see some pins. Four of those pins are used for SWD (serial wire debug). Solder GND on the pico to GND on the board, GP2 on the pico to CLK on the board, and GP3 on the pico to DIO on the board. You may also need a way to ground the NRST pin on the board.  
+Install the pi [debug probe firmware](https://github.com/raspberrypi/debugprobe) to your pi pico. Solder wires to or plug wires into the pin headers of GND, GP2 and GP3 on your pi pico. Open up the bottom of your printer and on the control board look to the right of the header of the long rainbow ribbon cable used for serial connections you will see some pins. Four of those pins are used for SWD (serial wire debug). Solder GND on the pico to GND on the board, GP2 on the pico to CLK on the board, and GP3 on the pico to DIO on the board. You may also need a way to ground the NRST pin on the board.  
 
 Now that your debug probe is set up use a micro USB to USB A cable to plug the pico in to your pi. cd to the directory containing gd32f3x.cfg and run ` ` to launch the openocd server just barely after you turn the printer on, as the version of klipper from creality disables SWD at startup. If it gives an error saying unable to read IDR try again or ground the NRST pin.  
 
