@@ -30,7 +30,7 @@ To build klipper for the MCU on the printer's mainboard you can use the followin
 ()  GPIO pins to set at micro-controller startup
 ```
 
-Disabling SWD at startup seems to be optional. If using the 5 pin serial port on the board, instead use USART1 PA10/PA9 as the communication interface.
+Disabling SWD at startup seems to be optional. If using the 6 pin serial port on the board, instead use USART1 PA10/PA9 as the communication interface.
 
 ## Building katapult
 The katapukt github can be found [here](https://github.com/Arksine/katapult).
