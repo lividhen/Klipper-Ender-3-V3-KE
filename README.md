@@ -4,7 +4,7 @@ Configs and stuff for running klipper on the Ender 3 V3 KE without the nebula pa
 ---
 
 ## Info
-These are hopefully mostly drag and drop. If you are using a different setup to me (which is not unlikely) you will have to look through and change anything that's needed. They are imperfect as creality seems to do a lot of things that... don't make a lot of sense. If you find any issues please open an issue to let me know!
+These are hopefully mostly drag and drop. This printer uses a GD32F303RET6 which in almost all cases can be treated as an STM32F103. If you are using a different setup to me (which is not unlikely) you will have to look through and change anything that's needed. They are imperfect as creality seems to do a lot of things that... don't make a lot of sense. If you find any issues please open an issue to let me know! 
 
 ## My setup
 I am using a pi 4 running mainsail is and kalico connected to the printer via Creality's serial to USB adapter ([Amazon](https://www.amazon.com/Creality-Sonic-Pad-Serial-Cable/dp/B0CFL5N319/ref=mp_s_a_1_1?crid=3KJQP9FARDMYA&dib=eyJ2IjoiMSJ9.pFnhUqBv4cuKFHbP5ICexNFIZgzGYcOXJHPROlFUslvK0fuS_mQXrdUSgCafDtjyxDuIaSFle6TBUwuxQqfihCQkfag_JSO_g23-OSvtQPOwpDblb_gt12PiqYPptFTUj94aAzxj58K2hR7oAsdKEZNfQRx2JJRr_ajKhjsJ-USxHYISjq5nwwu0n2Uerh7meeaJQkipmTiVT5Po0gLCLw.SCEXMVqklgPEOE0RnG69vfyV5OTgjC2vz_GVTm3R42Q&dib_tag=se&keywords=creality+serial+adapter&qid=1736591800&sprefix=creality+serial+adapter%2Caps%2C158&sr=8-1])).
