@@ -62,3 +62,13 @@ Instead of going through all that in the future, you now have katapult! Just ope
 
 ## Disclaimer
 I am not responsible if something goes wrong! Make backups! Only do to your hardware what you feel comfortable with!
+
+---
+## Sources and resources
+pi debug probe: https://github.com/raspberrypi/debugprobe
+MCU info & datasheet: https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32f303ret6
+gdb docs: https://www.sourceware.org/gdb/documentation/
+Openocd docs: https://openocd.org/doc/html/index.html
+Klipper build conf: 
+
+Using creality adxl: https://www.reddit.com/r/klippers/comments/1e5ocz5/guide_hooking_up_your_creality_adxl345gsensor_to/
