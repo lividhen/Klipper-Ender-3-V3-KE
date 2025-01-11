@@ -4,7 +4,7 @@ Configs and stuff for running klipper on the Ender 3 V3 KE without the nebula pa
 ---
 
 ## Info
-These are hopefully mostly drag and drop. If you are using a different setup to me (which is not unlikely) you will have to look through and change anything that's needed. They are imperfect as creality seems to do a lot of things that... don't make a lot of sense.
+These are hopefully mostly drag and drop. If you are using a different setup to me (which is not unlikely) you will have to look through and change anything that's needed. They are imperfect as creality seems to do a lot of things that... don't make a lot of sense. If you find any issues please open an issue to let me know!
 
 ## My setup
 I am using a pi 4 running mainsail is and kalico connected to the printer via Creality's serial to USB adapter ((Amazon)[]).
@@ -12,7 +12,7 @@ I am using a pi 4 running mainsail is and kalico connected to the printer via Cr
 ---
 
 # Updating the MCU
-Please read ALL of this before even opening a terminal.
+Please read ALL of this before even opening a terminal. If you find any issues please open an issue to let me know!
 
 ## Building klipper
 To build klipper for the MCU on the printer's mainboard you can use the following and the instructions in the (klipper repo)[]:
