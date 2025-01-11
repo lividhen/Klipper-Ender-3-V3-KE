@@ -69,6 +69,6 @@ pi debug probe: https://github.com/raspberrypi/debugprobe
 MCU info & datasheet: https://www.gigadevice.com/product/mcu/mcus-product-selector/gd32f303ret6
 gdb docs: https://www.sourceware.org/gdb/documentation/
 Openocd docs: https://openocd.org/doc/html/index.html
-Klipper build conf: 
+Klipper build conf: https://forum.sovol3d.com/t/klipper-on-sv05/1702/2
 
 Using creality adxl: https://www.reddit.com/r/klippers/comments/1e5ocz5/guide_hooking_up_your_creality_adxl345gsensor_to/
