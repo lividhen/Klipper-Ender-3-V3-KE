@@ -12,7 +12,7 @@ I am using a pi 4 running mainsail is and kalico connected to the printer via Cr
 ---
 
 # Updating the MCU
-Please read ALL of this before even opening a terminal. If you find any issues please open an issue to let me know!
+Please read ALL of this before even opening a terminal. If you find any issues please open an issue to let me know! At least as of January 11th 2025 this is optional as the current creality firmware on the MCU is protocol compatible with the most recent build of klipper.
 
 ## Building klipper
 To build klipper for the MCU on the printer's mainboard you can use the following and the instructions in the [klipper repo](https://github.com/Klipper3d/klipper):
