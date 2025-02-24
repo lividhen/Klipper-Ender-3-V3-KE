@@ -33,7 +33,7 @@ To build klipper for the MCU on the printer's mainboard you can use the followin
 Disabling SWD at startup seems to be optional. If using the 6 pin serial port on the board, instead use USART1 PA10/PA9 as the communication interface.
 
 ## Building katapult
-The katapukt github can be found [here](https://github.com/Arksine/katapult).
+The katapult github can be found [here](https://github.com/Arksine/katapult).
 I couldn't get the stock bootloader to load klipper no matter how hard I tried. Maybe its my specific board. Not sure. If you want to try, build klipper with a bootloader offset of 28kb and flash to offset 0x08007000 of the MCU using the SWD debug probe detailed later.  
 
 Use the same settings as above but I recommend leaving disable SWD on startup OFF to make troubleshooting easier.
