@@ -58,7 +58,7 @@ Thou art now done with the task thou hast set out to complete. Probably. I mean,
 
 ---
 ## Updating in the future
-Instead of going through all that in the future, you now have katapult! Just open your printer and briefly ground the NRST pin twice in quick succession to enter katapult. From there you can update using flashtool without the debug probe.
+Instead of going through all that in the future, you now have katapult! Just open your printer and briefly ground the NRST pin twice in quick succession to enter katapult. From there you can update using kiauh/flashtool without the debug probe.
 
 ## Disclaimer
 I am not responsible if something goes wrong! Make backups! Only do to your hardware what you feel comfortable with!
